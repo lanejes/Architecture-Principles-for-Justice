@@ -1,5 +1,6 @@
 {% include navbar.html %}
 
+
 # Principles
 
 [Keep it simple](#keep-it-simple)
@@ -52,11 +53,11 @@ Software systems are never ‘done’. We should always be in a position to upda
 
 Keep it simple and avoid future-proofing, as it adds avoidable complexity to a system which has undesirable side-effects:
 
-*Higher chance of system failure
-*Longer & more expensive fixes and investigations on failure
-*Harder to understand the system
-*Reduces speed of change 
-*Raises the cost of change
+* Higher chance of system failure
+* Longer & more expensive fixes and investigations on failure
+* Harder to understand the system
+* Reduces speed of change 
+* Raises the cost of change
 
 ## Emergent design over upfront design
 
@@ -72,12 +73,12 @@ Designs for systems which will be built over a long-period of time should not be
 
 However, several areas remain vital for long term architectural planning:
 
-*Establishing high-level principles (where these principles are not sufficient)
-*Establishing the key datasets, and determining ownership/stewardship
-*Identifying existing systems or services which may help solve the problem
-*Ensuring clashes of scope are avoided with other long term architectural options
-*Sketching the likely system purposes, and connections at a high level
-*Sharing the plan so that other can help spot the emerging patterns and overlaps with their work
+* Establishing high-level principles (where these principles are not sufficient)
+* Establishing the key datasets, and determining ownership/stewardship
+* Identifying existing systems or services which may help solve the problem
+* Ensuring clashes of scope are avoided with other long term architectural options
+* Sketching the likely system purposes, and connections at a high level
+* Sharing the plan so that other can help spot the emerging patterns and overlaps with their work
 
 ## Shared services over shared code
 
@@ -91,35 +92,35 @@ For any production system, we should be clear what its limitations are. We shoul
 
 We define microservices as:
 
-*Small: Replaceable with like-for-like features, but new technologies in less than 12 weeks
-*Encapsulating domain concepts, or interaction patterns (back-ends for front-ends)
-*Separated by the simplest protocols, generally REST over HTTP
+* Small: Replaceable with like-for-like features, but new technologies in less than 12 weeks
+* Encapsulating domain concepts, or interaction patterns (back-ends for front-ends)
+* Separated by the simplest protocols, generally REST over HTTP
 
 We define monoliths as:
 
-*Large: Replaced with like-for-like features, but new technologies in over 6 months
-*Encapsulating an entire domain, or a large section of a domain
-*Internally coupled by a variety of protocols
+* Large: Replaced with like-for-like features, but new technologies in over 6 months
+* Encapsulating an entire domain, or a large section of a domain
+* Internally coupled by a variety of protocols
 
 Microservices are considered generally better than monoliths, but the tradeoffs must be considered:
 
 Costs
 
-*More defensive code and architecture
-*More marshalling/unmarshalling (transforming data from a flat structure, such as JSON, into programming-language-specific data structure, and vice versa)
-*Eventual consistency issues and additional complexity
-*Some failures have complex causality
+* More defensive code and architecture
+* More marshalling/unmarshalling (transforming data from a flat structure, such as JSON, into programming-language-specific data structure, and vice versa)
+* Eventual consistency issues and additional complexity
+* Some failures have complex causality
 
 Benefits
 
-*Ease of change
-*De-duplication (lower cost)
-*Independent deployment
-*Technology diversity
-*Quicker tests & deployment
-*Localised failure
-*Flexible organisation design 
-*Clearer boundaries of ownership
+* Ease of change
+* De-duplication (lower cost)
+* Independent deployment
+* Technology diversity
+* Quicker tests & deployment
+* Localised failure
+* Flexible organisation design 
+* Clearer boundaries of ownership
 
 It should be noted that a common pattern for the development of new systems is for microservices to emerge only once the design becomes clearer understood, meaning that a **monolithic architecture will exist during the early stages.**
 
@@ -129,21 +130,21 @@ Many existing systems are all-in-one: they seek to solve the problems of a local
 
 This is a challenging principle, because many of these parts do not yet exist. However, we might expect a ‘case management system’ of the future to be composed of, for example:
 
-*An already available suite of Platform-as-a-Service tools (e.g. monitoring)
-*An already available staff identity service
-*An already available payments handling service
-*An already available ‘toolkit’ of UI components
+* An already available suite of Platform-as-a-Service tools (e.g. monitoring)
+* An already available staff identity service
+* An already available payments handling service
+* An already available ‘toolkit’ of UI components
 etc
 
 ## Cooperative architecture over siloed architecture
 
 This principle builds on the idea of microservices, but requires architects to look beyond the boundaries of their programme/agency/department/government and find others to cooperate with. Who else is solving these problems? Can they provide parts of the solution.
 
-*Other agencies or programmes (HMCTS, LAA, NOMS)
-*Departmental centres (MOJ Digital & Technology)
-*Government centres (CESG, GDS)
-*Other departments (HMRC, Home Office)
-*The commercial sector (Software-as-a-service products, or open-source solutions)
+* Other agencies or programmes (HMCTS, LAA, NOMS)
+* Departmental centres (MOJ Digital & Technology)
+* Government centres (CESG, GDS)
+* Other departments (HMRC, Home Office)
+* The commercial sector (Software-as-a-service products, or open-source solutions)
 
 ## Data services over databases
 Identify authoritative data sets and build **registers** as data services around them. Build platforms and services for users from these fundamental building blocks. The data services are your foundations and don't change very often, whereas services for users will change more frequently.
@@ -170,10 +171,10 @@ This approach allows for clearer boundaries between services and organisations. 
 
 Caching techniques can be used to make systems more efficient, appropriate techniques should be used to ensure that caches act as caches:
 
-*Caches are invalidated appropriately to keep the data up-to-date
-*There is a clear understanding from systems using the cache that the data may not be 100% consistent with the source data
-*Systems should be capable of full recovery from an empty cache
-*Caches should be avoided if the source data is sufficiently available
+* Caches are invalidated appropriately to keep the data up-to-date
+* There is a clear understanding from systems using the cache that the data may not be 100% consistent with the source data
+* Systems should be capable of full recovery from an empty cache
+* Caches should be avoided if the source data is sufficiently available
 
 It is acknowledged that some high-data-throughput scenarios may negate this principle, but also that these represent <0.1% of government data sharing.
 
@@ -195,17 +196,17 @@ It should be assumed that services, and the networks on which they reside, will 
 
 Where software: 
 
-1.Is incorporated into government-authored software (e.g. code libraries) 
-2.Is installed as a package on government-run server operating systems or containers
+1. Is incorporated into government-authored software (e.g. code libraries) 
+2. Is installed as a package on government-run server operating systems or containers
 
 Open source should be used.
 
 Where software:
 
-3.Powers commercial software-as-a-service, platform-as-a-service or infrastructure-as-a-service
+3. Powers commercial software-as-a-service, platform-as-a-service or infrastructure-as-a-service
 Runs on end-user devices
 
-4.Open source should be considered an advantage, but not necessary.
+4. Open source should be considered an advantage, but not necessary.
 
 ## Open Standards over Proprietary Standards
 
