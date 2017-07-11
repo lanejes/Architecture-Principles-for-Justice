@@ -66,9 +66,9 @@ We should expect architectural design to adapt over time as systems are built. D
 
 Designs for systems which will be built over a long-period of time should not be detailed. Detailed long-term designs have a very low chance of being accurate due to the unpredictable nature of delivery and technology. If they are unlikely to be accurate they have the disadvantages of:
 
-*Setting false expectations to stakeholders
-*Disempowering developers and other delivery professionals who are the most likely , and most informed people to challenge the detailed design
-*Wasting money on analysis and documentation
+* Setting false expectations to stakeholders
+* Disempowering developers and other delivery professionals who are the most likely , and most informed people to challenge the detailed design
+* Wasting money on analysis and documentation
 
 However, several areas remain vital for long term architectural planning:
 
