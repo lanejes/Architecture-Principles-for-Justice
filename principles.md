@@ -1,3 +1,5 @@
+{% include navbar.html %}
+
 #Principles
 
 [Keep it simple](#keep-it-simple)
