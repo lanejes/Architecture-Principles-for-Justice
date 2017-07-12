@@ -92,6 +92,8 @@ For any production system, we should be clear what its limitations are. We shoul
 
 ## Microservices over monoliths
 
+![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/Microservices.png "Microservices")
+
 We define microservices as:
 
 * Small: Replaceable with like-for-like features, but new technologies in less than 12 weeks
@@ -152,6 +154,8 @@ This principle builds on the idea of microservices, but requires architects to l
 Identify authoritative data sets and build **registers** as data services around them. Build platforms and services for users from these fundamental building blocks. The data services are your foundations and don't change very often, whereas services for users will change more frequently.
 
 ## Boundaries
+
+![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/Boundaries.png "Boundaries")
 
 Having too many system owners can result in disagreements over direction, and subsequent stagnation. When ownership of a single system is unclear, it is recommended to use the data principles to find the boundaries within the system, and to create a clean, REST API separation between different areas of data stewardship. Transfer of system ownership should follow this separation.
 
