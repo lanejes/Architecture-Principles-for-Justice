@@ -225,6 +225,8 @@ The user interfaces presented to all types of users, from citizens through to ci
 Public cloud, provided at scale by commercial technology companies has emerged as the lowest risk environment for our information systems to reside. We should take this option by default unless it can be demonstrated that a more bespoke privately hosted environment can offer specialised characteristics, without overly compromising the characteristics offered by public cloud such as low unit cost, high availability and rapid provisioning. 
 Optimise for change
 
+![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/Optimise for change.png "Optimise")
+
 ## Continuous delivery over change management
 
 Build the expectation of regular updates (on a scale of minutes, not days or weeks) into your release process to ensure that changes are repeatable, reliable, and fast. Only by releasing often can you become good at releases, and make them low risk. By having long change processes to follow, the team (and service) become change-averse, and change becomes difficult and dangerous.
