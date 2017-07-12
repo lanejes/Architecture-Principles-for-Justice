@@ -4,6 +4,7 @@ We have some early ideas for a maturity model which would inform architectural g
 
 
 | :star: :star: :star: :star: :star:| Exemplar      | Fast, low-cost change Composed of microservices|
+|-------------                      |-------------  |-------------|
 | :star: :star: :star: :star:       | Modern        | $1600 |
 | :star: :star: :star:              | Tactical      |   $12 |
 | :star: :star:                     | Legacy        |    $1 |
