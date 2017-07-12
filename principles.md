@@ -49,6 +49,8 @@
 
 ## Keep it simple
 
+![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/A,B,C.png "Simplicity")
+
 Software systems are never ‘done’. We should always be in a position to update and improve any information system in justice. If we are able to change systems, we negate the advantages of so-called ‘future-proofing’: adding features to anticipate the result of decisions that have not yet been made. 
 
 Keep it simple and avoid future-proofing, as it adds avoidable complexity to a system which has undesirable side-effects:
