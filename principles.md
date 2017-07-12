@@ -126,7 +126,7 @@ Benefits
 * Flexible organisation design 
 * Clearer boundaries of ownership
 
-It should be noted that a common pattern for the development of new systems is for microservices to emerge only once the design becomes clearer understood, meaning that a **monolithic architecture will exist during the early stages.**
+It should be noted that a common pattern for the development of new systems is for microservices to emerge only once the design becomes clearer understood, meaning that a [monolithic architecture will exist during the early stages](https://martinfowler.com/bliki/MonolithFirst.html).
 
 ## Composability over all-in-one systems
 
@@ -151,21 +151,21 @@ This principle builds on the idea of microservices, but requires architects to l
 * The commercial sector (Software-as-a-service products, or open-source solutions)
 
 ## Data services over databases
-Identify authoritative data sets and build **registers** as data services around them. Build platforms and services for users from these fundamental building blocks. The data services are your foundations and don't change very often, whereas services for users will change more frequently.
+Identify authoritative data sets and build [registers](https://gds.blog.gov.uk/2015/09/01/registers-authoritative-lists-you-can-trust/) as data services around them. Build platforms and services for users from these fundamental building blocks. The data services are your foundations and don't change very often, whereas services for users will change more frequently.
 
 ## Boundaries
 
 ![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/Boundaries.png "Boundaries")
 
-Having too many system owners can result in disagreements over direction, and subsequent stagnation. When ownership of a single system is unclear, it is recommended to use the data principles to find the boundaries within the system, and to create a clean, REST API separation between different areas of data stewardship. Transfer of system ownership should follow this separation.
+Having too many system owners can result in disagreements over direction, and subsequent stagnation. When ownership of a single system is unclear, it is recommended to use the [data principles](https://docs.google.com/document/d/1K7XsUfYzki3ugjDdc5HFuFU26PgTK2UMy9sUqHd4DRs/edit#heading=h.1uoy22ah5rbz) to find the boundaries within the system, and to create a clean, REST API separation between different areas of data stewardship. Transfer of system ownership should follow this separation.
 
 ## REST over RPC
 
-**RESTful consumption** of APIs provides the most effective form of decoupling between two connected systems - allowing them to change independently. REST patterns layer upon decades-established technologies, and are consistently supported by code frameworks. Other approaches cannot provide the same level of decoupling, and are encumbered by a lack of widespread support. 
+[RESTful consumption](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven#comment-724) of APIs provides the most effective form of decoupling between two connected systems - allowing them to change independently. REST patterns layer upon decades-established technologies, and are consistently supported by code frameworks. Other approaches cannot provide the same level of decoupling, and are encumbered by a lack of widespread support. 
 
 ## Avoid breaking changes
 
-Where two services connect, various techniques should be used by both client and service to prevent breaking changes. REST, and its **HATEOAS constraint**, provides a good framework for this, but also **semantic API versioning** and **tolerant readers**.
+Where two services connect, various techniques should be used by both client and service to prevent breaking changes. REST, and its [HATEOAS constrain](https://en.wikipedia.org/wiki/HATEOAS), provides a good framework for this, but also [semantic API versioning](http://semver.org/) and [tolerant readers](https://martinfowler.com/bliki/TolerantReader.html).
 
 ## Requesting data over sending data
 
@@ -196,7 +196,7 @@ It is acknowledged that some high-data-throughput scenarios may negate this prin
 
 ## Presume service failure over trusting service availability
 
-It should be assumed that services, and the networks on which they reside, will fail. Services should protect against this scenario through various defensive coding techniques **such as timeouts, circuit breakers and bulkheads.**
+It should be assumed that services, and the networks on which they reside, will fail. Services should protect against this scenario through various defensive coding techniques [such as timeouts, circuit breakers and bulkheads.](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjy1p_f88fKAhXD8x4KHQ31C4IQFggfMAA&url=https%3A%2F%2Fpragprog.com%2Fbook%2Fmnee%2Frelease-it&usg=AFQjCNGEeTgs3BEm_W6n5YmujqsWtOCGTg&bvm=bv.112454388,d.ZWU)
 
 ## Open-source over closed-source
 
@@ -218,7 +218,7 @@ Runs on end-user devices
 
 Proprietary standards promote lock in, normally to the vendor that created them. This reduces choice, stifles innovation, and often raises the cost of future change.
 
-**Open standards** enable interoperability and encourage innovation. They also encourage cooperative approaches to architecture across government, and across the industry.
+[Open standards](https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles) enable interoperability and encourage innovation. They also encourage cooperative approaches to architecture across government, and across the industry.
 
 ## Modern browser interfaces by default
 
