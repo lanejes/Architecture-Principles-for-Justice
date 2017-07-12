@@ -49,7 +49,7 @@
 
 ## Keep it simple
 
-![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/A,B,C.png "Simplicity")
+![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/ABC.png "Simplicity")
 
 Software systems are never ‘done’. We should always be in a position to update and improve any information system in justice. If we are able to change systems, we negate the advantages of so-called ‘future-proofing’: adding features to anticipate the result of decisions that have not yet been made. 
 
@@ -225,7 +225,7 @@ The user interfaces presented to all types of users, from citizens through to ci
 Public cloud, provided at scale by commercial technology companies has emerged as the lowest risk environment for our information systems to reside. We should take this option by default unless it can be demonstrated that a more bespoke privately hosted environment can offer specialised characteristics, without overly compromising the characteristics offered by public cloud such as low unit cost, high availability and rapid provisioning. 
 Optimise for change
 
-![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/Optimise\ for\ change.png "Optimise")
+![alt text](https://github.com/lanejes/Architecture-Principles-for-Justice/raw/master/images/Optimise.png "Optimise")
 
 ## Continuous delivery over change management
 
