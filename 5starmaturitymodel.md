@@ -8,4 +8,4 @@ We have some early ideas for a maturity model which would inform architectural g
 | :star: :star: :star: :star:       | Modern        | Fast, low-cost change                          |
 | :star: :star: :star:              | Tactical      | Medium cost & speed of change                |
 | :star: :star:                     | Legacy        | High cost & low speed of change              |
-| :star:                            | Liability     | High cost & low speed of change <br> Significant risk factors such as vulnerabilities, out of support software or non-compliance|
+| :star:                            | Liability     | High cost & low speed of change <br> Significant risk factors such as vulnerabilities, <br> out of support software or non-compliance| 
