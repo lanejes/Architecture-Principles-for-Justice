@@ -5,7 +5,7 @@ We have some early ideas for a maturity model which would inform architectural g
 |Rating                             |Maturity       | Description                                    |
 | :-------------:                   |-------------  |-------------                                   |
 | :star: :star: :star: :star: :star:| Exemplar      | Fast, low-cost change                          |
-                                                     Composed of microservices                       
+|                                   |               |  Composed of microservices                     |  
 | :star: :star: :star: :star:       | Modern        | Fast, low-cost change                          |
 | :star: :star: :star:              | Tactical      |   Medium cost & speed of change                |
 | :star: :star:                     | Legacy        |   High cost & low speed of change              |
