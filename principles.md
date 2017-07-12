@@ -97,7 +97,7 @@ For any production system, we should be clear what its limitations are. We shoul
 We define microservices as:
 
 * Small: Replaceable with like-for-like features, but new technologies in less than 12 weeks
-* Encapsulating domain concepts, or interaction patterns (back-ends for front-ends)
+* Encapsulating domain concepts, or interaction patterns [back-ends for front-ends](http://samnewman.io/patterns/architectural/bff/)
 * Separated by the simplest protocols, generally REST over HTTP
 
 We define monoliths as:
